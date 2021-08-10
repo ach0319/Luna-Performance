@@ -1,0 +1,790 @@
+﻿/* Body Style for Pages */
+#index {
+  background-color: black;
+}
+
+.container {
+  background-image: url("image3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 50px;
+  background-color: black;
+  padding-bottom: 100px;
+}
+#about {
+  background-image: url("image3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: black;
+}
+#contact {
+  background-color: black;
+}
+
+/* CAROUSEL */
+
+.carousel {
+  height: 80%;
+  /*opacity: 0;*/
+  margin-top: 100px;
+  width: 100%;
+}
+
+.carousel h1 {
+  color: white;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  margin-top: 200px;
+}
+iframe {
+  margin-top: 50px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-caption {
+  text-align: right;
+  color: rgb(3, 3, 126);
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/*.carousel-inner .active {
+  opacity: 0.98;
+}*/
+
+#scroll-button {
+  width: 6rem;
+  height: 6rem;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  left: 175rem;
+  bottom: 10rem;
+  animation: pulse 1s linear infinite;
+}
+/* CAROUSEL BUTTON */
+
+.landing-button {
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+}
+
+#login-button {
+  padding: 20px;
+  background-color: white;
+  color: blue;
+  font-size: 2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-family: "Permanent Marker", cursive;
+  animation: pulse 1s linear infinite;
+  position: relative;
+}
+/* About Me Page */
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  width: 100%;
+}
+
+#about-image {
+  background-color: black;
+  box-shadow: 10px 10px 5px grey;
+}
+
+#about-me {
+  width: 50%;
+  height: 500px;
+  padding-left: 2rem;
+  background-image: linear-gradient(45deg, white, slategray);
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 0 30px 30px 0;
+  font-family: "Permanent Marker", cursive;
+  box-shadow: 10px 10px 5px grey;
+}
+
+/* Testimonials Page */
+
+.gtco-testimonials {
+  position: relative;
+  bottom: 0;
+  height: auto;
+  background-position: center;
+  background-color: grey;
+  width: 100%;
+  padding-top: 100px;
+}
+.gtco-testimonials h2 {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-family: "Permanent Marker", cursive;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 5rem;
+}
+
+.owl-carousel {
+  position: relative;
+  left: -250px;
+}
+.owl-stage-outer {
+  padding: 30px 0;
+}
+
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  position: relative;
+  left: -5%;
+}
+.owl-dots span {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: block;
+  background: #fff;
+  border: 2px solid slategray;
+  margin: 0 5px;
+  margin-bottom: 100px;
+}
+
+.owl-dots .active {
+  box-shadow: none;
+}
+.owl-dots .active span {
+  background: blue;
+  box-shadow: none;
+  height: 12px;
+  width: 12px;
+  margin-bottom: 100px;
+}
+
+.owl-carousel {
+  margin-right: auto;
+  margin-left: auto;
+}
+.card {
+  box-shadow: 0 8px 30px -7px #c9dff0;
+  margin: 0 20px;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 0;
+  width: 100%;
+
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-img-top {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 15px auto 0;
+  box-shadow: 0 8px 20px -4px #95abbb;
+}
+
+.card h5 {
+  color: #555;
+  font-size: 1.5em;
+  line-height: 1.3;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 18px;
+  color: rgb(3, 3, 126);
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+.active {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.center {
+  opacity: 1;
+}
+.center h5 {
+  font-size: 24px;
+}
+.center span {
+  font-size: 20px;
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: 175px;
+  width: 175px;
+}
+
+/* contact page */
+#contact-info {
+  text-align: center;
+
+  background-color: rgba(128, 128, 128, 0.7);
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 1em;
+  color: blue;
+  border-radius: 30px;
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
+#contact-info h2 {
+  font-size: 2em;
+  font-family: "Permanent Marker", cursive;
+}
+
+#contact-info p {
+  font-size: 1.5em;
+  font-family: "Permanent Marker", cursive;
+}
+
+#contact-info a {
+  font-size: 2.5em;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+.fa-instagram-square {
+  color: purple;
+}
+/* Navigation Menu */
+.topnav {
+  overflow: hidden;
+  background-image: linear-gradient(45deg, white, slategray);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+/*#nav-bar {
+  opacity: 0;
+}*/
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+.topnav #myLinks-2 {
+  display: none;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  padding: 14px 17px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: "Permanent Marker", cursive;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  font-size: 25px;
+}
+
+/* Add a grey background color on mouse-over */
+
+/* Style the active link (or home/logo) */
+#logo {
+  color: black;
+  font-family: "Permanent Marker", cursive;
+}
+
+#static-nav-bar {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+}
+
+#static-nav-bar-two {
+  position: fixed;
+  top: 0;
+}
+
+/* Price Page */
+#price-list {
+  position: relative;
+  height: 100%;
+  background-image: url("image3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 50px;
+  background-color: black;
+}
+
+#price-info {
+  text-align: center;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Permanent Marker", cursive;
+  background-color: rgba(184, 184, 184, 0.95);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  border-radius: 30px;
+}
+
+#price-body {
+  padding-top: 100px;
+}
+#price-bottom {
+  color: blue;
+}
+
+#price-info h3 {
+  text-align: left;
+  margin-left: 100px;
+}
+
+#price-info h4 {
+  text-align: left;
+  margin-left: 150px;
+}
+
+.btn {
+  width: 5%;
+  border-radius: 50%;
+  position: relative;
+  left: 25%;
+  animation: pulse 1s linear infinite;
+  background-color: blue;
+  color: white;
+  font-family: "Permanent Marker", cursive;
+  font-weight: bold;
+}
+
+.price h2,
+button {
+  display: inline-block;
+}
+
+.modal {
+  background-color: rgba(128, 128, 128, 0.459);
+}
+
+.modal-content {
+  background-color: slategrey;
+}
+
+#modal-content {
+  background-color: white;
+}
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.modal-header h5 {
+  margin-left: auto;
+  font-family: "Permanent Marker", cursive;
+  color: blue;
+}
+.modal-body {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  line-height: 2;
+}
+
+#btn {
+  background-color: white;
+  color: black;
+  border-radius: 0%;
+  width: 20%;
+  position: relative;
+  left: -2%;
+  margin-top: 10px;
+  animation: none;
+}
+/* Contact Page */
+
+#FAQ {
+  width: 50%;
+  font-family: "Permanent Marker", cursive;
+  background-color: rgba(128, 128, 128, 0.7);
+  color: black;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1rem;
+  margin-top: 75px;
+  border-radius: 30px;
+}
+
+.faq-container {
+  background: url("image3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: black;
+}
+
+#FAQ h1 {
+  text-align: center;
+}
+
+#FAQ p {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.quest {
+  font-weight: bold;
+  color: blue;
+}
+/* Contact Form */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type="submit"] {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: blue;
+}
+
+#modal-body {
+  border-radius: 5px;
+  background-color: #ccc;
+  padding: 20px;
+}
+
+#modal-header {
+  background-color: #ccc;
+}
+/* Shop Page */
+
+#shop {
+  background-color: black;
+}
+#top-shop {
+  background-image: url("image3.png");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  top: 4.5%;
+  width: 100%;
+  height: 30%;
+}
+
+#top-shop h1 {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  color: white;
+  margin-top: 5%;
+}
+
+#shop-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+  padding-top: 5%;
+  height: 100%;
+}
+
+#item-one img {
+  margin-left: 35%;
+}
+
+#item-one img:hover {
+  animation: pulse 1s linear;
+}
+
+#item-one h4 {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+}
+
+#item-one p {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  color: green;
+}
+/* Animation and Media Queries */
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@media (max-width: 767px) {
+  .gtco-testimonials {
+    margin-top: 20px;
+  }
+}
+
+.owl-carousel {
+  outline: 0;
+}
+.owl-nav button {
+  outline: 0;
+}
+.owl-next,
+.owl-prev {
+  outline: 0;
+}
+
+button.owl-dot {
+  outline: 0;
+}
+
+@media only screen and (min-width: 1280px) {
+  iframe {
+    margin-left: 75px;
+  }
+  .card {
+    width: 75%;
+  }
+
+  .owl-dots {
+    margin-left: 50%;
+  }
+
+  .owl-carousel {
+    margin-left: 300px;
+  }
+  #FAQ {
+    width: 75%;
+  }
+
+  #contact-info {
+    width: 75%;
+  }
+
+  #btn {
+    width: 50%;
+  }
+
+  #price-info {
+    width: 75%;
+  }
+
+  .btn {
+    left: 2%;
+    width: 5%;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    width: 100%;
+  }
+
+  #about-image {
+    background-color: black;
+    box-shadow: 10px 10px 5px grey;
+  }
+
+  #about-image {
+    height: 100%;
+  }
+
+  #about-me {
+    width: 60%;
+    height: auto;
+    padding-left: 2rem;
+    background-image: linear-gradient(45deg, white, slategray);
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 0 30px 30px 0;
+    font-family: "Permanent Marker", cursive;
+    box-shadow: 10px 10px 5px grey;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    background-position: center 50px;
+    background-size: cover;
+  }
+  iframe {
+    margin-left: -0px;
+  }
+  #FAQ {
+    width: 75%;
+  }
+  .card {
+    width: 75%;
+  }
+
+  .owl-dots {
+    margin-left: 50%;
+  }
+
+  .owl-carousel {
+    margin-left: 250px;
+  }
+
+  #contact-info {
+    width: 75%;
+  }
+
+  #btn {
+    width: 50%;
+  }
+
+  #price-info {
+    width: 75%;
+  }
+
+  .btn {
+    left: 2%;
+    width: 8%;
+  }
+
+  #price-info h3 {
+    margin-left: 50px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-image {
+    width: 75%;
+    border-radius: 30px 30px 0 0;
+  }
+
+  #about-image img {
+    width: 100%;
+  }
+  #about-me {
+    border-radius: 0 0 30px 30px;
+    height: auto;
+    width: 72%;
+  }
+
+  #shop-items {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    background-size: cover;
+  }
+
+  iframe {
+    margin-left: -0px;
+  }
+  .testimonials {
+    height: auto;
+  }
+  #FAQ {
+    width: 90%;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .owl-dots {
+    margin-left: 40%;
+  }
+
+  .owl-carousel {
+    margin-left: 250px;
+  }
+
+  #contact-info {
+    width: 90%;
+  }
+
+  #btn {
+    width: 50%;
+  }
+
+  #price-info {
+    width: 90%;
+  }
+
+  .btn {
+    left: 2%;
+    width: 10%;
+  }
+
+  #price-info h3 {
+    margin-left: 15px;
+    font-size: 1.5rem;
+  }
+
+  #about-image {
+    width: 90%;
+  }
+  #about-me {
+    width: 90%;
+  }
+
+  #shop-items {
+    margin-top: 15%;
+  }
+}
