@@ -15,6 +15,7 @@
     crossorigin="anonymous"
   />
   <link rel="stylesheet" href="style.css" />
+  <script src="shop.js" async></script>
 </head>
 <body id="shop">
   <div class="topnav" id="static-nav-bar-two">
@@ -35,7 +36,53 @@
   <div id="top-shop">
     <h1>LUNA PERFORMANCE SHOP</h1>
   </div>
-  <div id="shop-items">
+  <div class="shopping-cart">
+    <button
+    type="button"
+    id="shopping-cart"
+    class="btn btn-primary shop-cart-button"
+    data-toggle="modal"
+    data-target="#exampleModalCenter"
+    ><i class="fas fa-shopping-cart"></i></button>   
+  
+  </div>
+
+  <section class="container content-section">
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Air Fresheners</span>
+            <img class="shop-item-image" src="Air Fresheners.jpeg" id="myImg" width="150px" height="300px">
+            <div id="myModal" class="pic-modal">
+              <span class="pic-close">&times;</span>
+              <img class="pic-modal-content" id="img01" />
+            </div>
+            <div class="shop-item-details">
+                <span class="shop-item-price">$5.00</span>
+                <select>
+                  <option id="scents">Scents:</option>
+                  <option id="New Car">New Car</option>
+                  <option id="Eucalyptus">Eucalyptus</option>
+                  <option id="Grapefrut">Grapefruit</option>
+                  <option id="Cinnamon Leaf">Cinnamon Leaf</option>
+                  <option id="Tea Tree">Tea Tree</option>
+                  <option id="Sea breeze">Sea Breeze</option>
+                  <option id="Forrest">Forrest</option>
+                  <option id="Pineapple">Pineapple</option>
+                  <option id="Coconut">Coconut</option>
+                  <option id="Summer Rose">Summer Rose</option>
+                </select>
+                <button
+                type="button"
+                id="add-cart"
+                class="btn btn-primary shop-item-button"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+              >
+                Add to Cart
+              
+        </div>
+  </section>
+  <!--<div id="shop-items">
     <div id="item-one">
       <img src="Air Fresheners.jpeg" id="myImg" width="150px" height="300px" />
       <div id="myModal" class="pic-modal">
@@ -75,7 +122,7 @@
         Add to Cart
       </button>
     </div>
-  </div>
+  </div>-->
   <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -115,7 +162,33 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body"></div>
+      <div class="modal-body">
+        <section class="modal-container modal-content-section">
+          <div class="cart-row">
+              <span class="cart-item cart-header cart-column">ITEM</span>
+              <span class="cart-price cart-header cart-column">PRICE</span>
+              <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+          </div>
+          <div class="cart-items">
+              <!--<div class="cart-row">
+                  <div class="cart-item cart-column">
+                      <img class="cart-item-image" src="Air Fresheners.jpeg" width="100" height="150">
+                      <span class="cart-item-title">Air-Fresheners</span>
+                  </div>
+                  <span class="cart-price cart-column">$5.00</span>
+                  <div class="cart-quantity cart-column">
+                      <input class="cart-quantity-input" type="number" value="1">
+                      <button class="modal-btn btn-danger" type="button">REMOVE</button>
+                  </div>-->
+              </div>
+          </div>
+          <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0.00</span>
+          </div>
+        <button class="modal-purchase-btn modal-btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+      </div>
       <div class="modal-footer"></div>
     </div>
   </div>
