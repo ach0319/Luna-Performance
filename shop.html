@@ -36,17 +36,6 @@
   <div id="top-shop">
     <h1>LUNA PERFORMANCE SHOP</h1>
   </div>
-  <div class="shopping-cart">
-    <button
-    type="button"
-    id="shopping-cart"
-    class="btn btn-primary shop-cart-button"
-    data-toggle="modal"
-    data-target="#exampleModalCenter"
-    ><i class="fas fa-shopping-cart"></i></button>   
-  
-  </div>
-
   <section class="container content-section">
     <div class="shop-items">
         <div class="shop-item">
@@ -58,138 +47,49 @@
             </div>
             <div class="shop-item-details">
                 <span class="shop-item-price">$5.00</span>
-                <select>
-                  <option id="scents">Scents:</option>
-                  <option id="New Car">New Car</option>
-                  <option id="Eucalyptus">Eucalyptus</option>
-                  <option id="Grapefrut">Grapefruit</option>
-                  <option id="Cinnamon Leaf">Cinnamon Leaf</option>
-                  <option id="Tea Tree">Tea Tree</option>
-                  <option id="Sea breeze">Sea Breeze</option>
-                  <option id="Forrest">Forrest</option>
-                  <option id="Pineapple">Pineapple</option>
-                  <option id="Coconut">Coconut</option>
-                  <option id="Summer Rose">Summer Rose</option>
-                </select>
-                <button
-                type="button"
-                id="add-cart"
-                class="btn btn-primary shop-item-button"
-                data-toggle="modal"
-                data-target="#exampleModalCenter"
-              >
-                Add to Cart
-              
-        </div>
-  </section>
-  <!--<div id="shop-items">
-    <div id="item-one">
-      <img src="Air Fresheners.jpeg" id="myImg" width="150px" height="300px" />
-      <div id="myModal" class="pic-modal">
-        <span class="pic-close">&times;</span>
-        <img class="pic-modal-content" id="img01" />
-      </div>
-      <h4>Air Fresheners</h4>
-      <p>$5.00</p>
-      <select>
-        <option id="scents">Scents:</option>
-        <option id="New Car">New Car</option>
-        <option id="Eucalyptus">Eucalyptus</option>
-        <option id="Grapefrut">Grapefruit</option>
-        <option id="Cinnamon Leaf">Cinnamon Leaf</option>
-        <option id="Tea Tree">Tea Tree</option>
-        <option id="Sea breeze">Sea Breeze</option>
-        <option id="Forrest">Forrest</option>
-        <option id="Pineapple">Pineapple</option>
-        <option id="Coconut">Coconut</option>
-        <option id="Summer Rose">Summer Rose</option>
-      </select>
-      <select>
-        <option id="quantity">Quantity:</option>
-        <option id="1">1</option>
-        <option id="2">2</option>
-        <option id="3">3</option>
-        <option id="4">4</option>
-        <option id="5">5</option>
-      </select>
-      <button
-        type="button"
-        id="add-cart"
-        class="btn btn-primary"
-        data-toggle="modal"
-        data-target="#exampleModalCenter"
-      >
-        Add to Cart
-      </button>
-    </div>
-  </div>-->
-  <script
-    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"
-  ></script>
-  <script src="script.js"></script>
-</body>
+                  <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="7YKU2ZJXWEQ5Y">
+                    <table>
+                    <tr><td><input type="hidden" name="on0" value="Scents:">Scents:</td></tr><tr><td><select name="os0">
+                      <option value="New Car">New Car </option>
+                      <option value="Eucalyptus">Eucalyptus </option>
+                      <option value="Grapefruit">Grapefruit </option>
+                      <option value="Cinnamon Leaf">Cinnamon Leaf </option>
+                      <option value="Tea Tree">Tea Tree </option>
+                      <option value="Sea Breeze">Sea Breeze </option>
+                      <option value="Forrest">Forrest </option>
+                      <option value="Pineapple">Pineapple </option>
+                      <option value="Coconut">Coconut </option>
+                      <option value="Summer Rose">Summer Rose </option>
+                    </select> </td></tr>
+                    </table>
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                    
+                </div> 
+          </div>
 
-<div
-  class="modal fade"
-  id="exampleModalCenter"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="exampleModalCenterTitle"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content" id="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Shopping Cart</h5>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
       </div>
-      <div class="modal-body">
-        <section class="modal-container modal-content-section">
-          <div class="cart-row">
-              <span class="cart-item cart-header cart-column">ITEM</span>
-              <span class="cart-price cart-header cart-column">PRICE</span>
-              <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-          </div>
-          <div class="cart-items">
-              <!--<div class="cart-row">
-                  <div class="cart-item cart-column">
-                      <img class="cart-item-image" src="Air Fresheners.jpeg" width="100" height="150">
-                      <span class="cart-item-title">Air-Fresheners</span>
-                  </div>
-                  <span class="cart-price cart-column">$5.00</span>
-                  <div class="cart-quantity cart-column">
-                      <input class="cart-quantity-input" type="number" value="1">
-                      <button class="modal-btn btn-danger" type="button">REMOVE</button>
-                  </div>-->
-              </div>
-          </div>
-          <div class="cart-total">
-            <strong class="cart-total-title">Total</strong>
-            <span class="cart-total-price">$0.00</span>
-          </div>
-        <button class="modal-purchase-btn modal-btn-primary btn-purchase" type="button">PURCHASE</button>
-        </section>
-      </div>
-      <div class="modal-footer"></div>
-    </div>
+  </section>
   </div>
 </div>
+<script
+src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"
+></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"
+></script>
+<script src="https://www.paypal.com/sdk/js?client-id=AeE7DGrBkclQcgCpnNMb4ZKDXr0silefo5A1Y2n9clrH7G0Ps24g-3IFUcU_x5UBrO8Gy_G8zcH4GqND&disable-funding=credit,card"></script>
+<script src="script.js"></script>
+</body>
