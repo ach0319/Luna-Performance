@@ -20,6 +20,7 @@ A responsive, dynamic website for a detailing business called Luna Performance.
 * Merchandise Shop with E-Commerce-Paypal Component
 * FAQ page and Contact Form
 * Responsive web and mobile layout
+* Ecommerce Shop
 
 ## Technologies
 Project is created with
