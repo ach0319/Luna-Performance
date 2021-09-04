@@ -9,7 +9,6 @@
   background-size: contain;
   background-position: center 50px;
   background-color: black;
-  padding-bottom: 100px;
 }
 #about {
   background-image: url("image3.png");
@@ -72,28 +71,10 @@ iframe {
   animation: pulse 1s linear infinite;
 }
 /* CAROUSEL BUTTON */
-
-.landing-button {
-  display: flex;
-  justify-content: center;
-  margin-top: -50px;
-}
-
-#login-button {
-  padding: 20px;
-  background-color: white;
-  color: blue;
-  font-size: 2rem;
-  border: 1px solid white;
-  border-radius: 50%;
-  font-family: "Permanent Marker", cursive;
-  animation: pulse 1s linear infinite;
-  position: relative;
-}
 /* About Me Page */
 .about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 200px;
@@ -103,20 +84,21 @@ iframe {
 #about-image {
   background-color: black;
   box-shadow: 10px 10px 5px grey;
+  margin-bottom: 5%;
 }
 
 #about-me {
-  width: 50%;
-  height: 500px;
   padding-left: 2rem;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   background-image: linear-gradient(45deg, white, slategray);
   color: black;
   font-size: 1.5rem;
-  border-radius: 0 30px 30px 0;
+  border-radius: 30px;
   font-family: "Permanent Marker", cursive;
   box-shadow: 10px 10px 5px grey;
+  width: 75%;
+  height: auto;
 }
 
 /* Testimonials Page */
@@ -128,7 +110,7 @@ iframe {
   background-position: center;
   background-color: grey;
   width: 100%;
-  padding-top: 100px;
+  height: auto;
 }
 .gtco-testimonials h2 {
   font-size: 30px;
@@ -144,7 +126,6 @@ iframe {
 
 .owl-carousel {
   position: relative;
-  left: -250px;
 }
 .owl-stage-outer {
   padding: 30px 0;
@@ -156,7 +137,7 @@ iframe {
 
 .owl-dots {
   position: relative;
-  left: -5%;
+  left: 50%;
 }
 .owl-dots span {
   position: relative;
@@ -191,9 +172,9 @@ iframe {
   padding: 0 10px;
   border-radius: 20px;
   border: 0;
-  width: 100%;
+  width: 75%;
 
-  height: 50%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,7 +201,7 @@ iframe {
 }
 
 .active {
-  opacity: 0.5;
+  opacity: 0.2;
   transition: all 0.3s;
 }
 
@@ -245,7 +226,7 @@ iframe {
   text-align: center;
 
   background-color: rgba(128, 128, 128, 0.7);
-  width: 50%;
+  width: 75%;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 1em;
@@ -276,17 +257,11 @@ iframe {
 }
 /* Navigation Menu */
 .topnav {
-  overflow: hidden;
   background-image: linear-gradient(45deg, white, slategray);
   position: fixed;
   width: 100%;
   z-index: 1000;
 }
-
-/*#nav-bar {
-  opacity: 0;
-}*/
-
 /* Hide the links inside the navigation menu (except for logo/home) */
 
 .topnav #myLinks-2 {
@@ -350,7 +325,7 @@ iframe {
 
 #price-info {
   text-align: center;
-  width: 40%;
+  width: 75%;
   margin-right: auto;
   margin-left: auto;
   font-family: "Permanent Marker", cursive;
@@ -439,7 +414,7 @@ button {
 /* Contact Page */
 
 #FAQ {
-  width: 50%;
+  width: 75%;
   font-family: "Permanent Marker", cursive;
   background-color: rgba(128, 128, 128, 0.7);
   color: black;
@@ -486,7 +461,7 @@ button {
   position: relative;
   top: 4.5%;
   width: 100%;
-  height: 30%;
+  height: 10%;
 }
 
 #top-shop h1 {
@@ -495,52 +470,51 @@ button {
   color: white;
   margin-top: 5%;
 }
-.container {
-  background-image: black;
-}
-.shop-items {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  background-color: black;
-  padding-top: 5%;
-  height: 100%;
-}
 
 .shop-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
   border: solid 10px white;
-  height: auto;
   background-color: slategray;
-  padding-left: 10%;
-  width: 50%;
-  height: 80%;
-}
-.shop-item img {
-  margin-left: 15%;
+  width: 100%;
+  height: auto;
+  padding-top: 15%;
+  padding-bottom: 20%;
+  margin-top: 20%;
 }
 
 .shop-item-title {
-  margin-left: 5%;
   font-family: "Permanent Marker", cursive;
   font-size: 2em;
+  text-align: center;
+  margin-top: -10%;
 }
 
 .shop-item-price {
-  text-align: center;
   font-family: "Permanent Marker", cursive;
   color: blue;
-  margin-left: 25%;
   font-size: 1.5em;
+  margin-left: 45%;
 }
 
+.shop-item img {
+  margin-right: auto;
+  margin-left: auto;
+}
 .shop-item select {
   width: 100%;
   font-size: 0.75em;
   padding: 0.5em;
   margin-bottom: 0.5em;
   margin-top: 1em;
-  margin-left: 10%;
+}
+
+.shop-item-details form {
+  position: absolute;
+  text-align: center;
+  left: 45%;
 }
 
 .shop-item input {
@@ -549,13 +523,6 @@ button {
   margin-right: auto;
   margin-left: auto;
 }
-
-.shop-item-details form {
-  position: absolute;
-  left: 46%;
-  text-align: center;
-}
-
 #add-cart {
   width: 75%;
   background-image: linear-gradient(45deg, green, white, green);
@@ -572,16 +539,6 @@ button {
   left: 62%;
   top: 45%;
   width: 100%;
-}
-
-#shopping-cart {
-  border-radius: 0%;
-  background-color: green;
-  animation: none;
-}
-
-#shopping-cart i {
-  font-size: 1.5em;
 }
 
 /* Style the Image Used to Trigger the Modal */
@@ -768,6 +725,22 @@ button {
   position: relative;
   left: 15%;
 }
+
+.owl-carousel {
+  outline: 0;
+}
+.owl-nav button {
+  outline: 0;
+}
+.owl-next,
+.owl-prev {
+  outline: 0;
+}
+
+button.owl-dot {
+  outline: 0;
+}
+
 @keyframes zoom {
   from {
     transform: scale(0);
@@ -793,8 +766,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1280px) {
-  iframe {
+/* iframe {
     margin-left: 75px;
   }
   .card {
@@ -869,7 +841,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 768px) {
+
   .container {
     background-position: center 50px;
     background-size: cover;
@@ -980,9 +952,11 @@ button {
   .shop-item input {
     margin-left: 10%;
   }
-}
 
-@media (max-width: 767px) {
+  .pic-modal-content {
+    width: 100%;
+  }
+
   .gtco-testimonials {
     margin-top: 20px;
   }
@@ -1001,12 +975,6 @@ button {
 
 button.owl-dot {
   outline: 0;
-}
-
-@media only screen and (max-width: 700px) {
-  .pic-modal-content {
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1147,3 +1115,4 @@ button.owl-dot {
     margin-left: 10%;
   }
 }
+*/
